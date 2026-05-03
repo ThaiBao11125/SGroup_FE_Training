@@ -1,0 +1,64 @@
+body {
+    font-family: Open Sans, Arial;
+    color: #454545;
+    font-size: 16px;
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 1em;
+    line-height: 1.4;
+    hyphens: auto;
+}
+
+a{
+  color: #07a;
+}
+
+small{
+  font-size: .4em;
+}
+
+.picture-left{
+    float: left;
+    width: 40%;
+    overflow: hidden;
+    margin-right: 1em;
+}
+
+img{
+  width: 100%;
+}
+
+.icon {
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+}
+
+figure{
+    margin: 10px;
+}
+
+figcaption{
+  font-size: .7em;
+}
+
+.mfw{
+  color: #730000;
+}
+
+blockquote{
+  color: #456;
+  margin: 2em 0;
+}
+
+author{
+  display: block;
+  font-size: .6em;
+  margin: 2em 1em;
+}
+
+.kopimi{
+  height: 2em;
+  width: 2em;
+  margin:auto;
+}

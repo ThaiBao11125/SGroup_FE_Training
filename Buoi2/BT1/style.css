@@ -1,0 +1,33 @@
+.container {
+  width: 250px;
+  height: 350px;
+  margin: auto;
+  background-color: rgb(254, 253, 199);
+  padding: 30px 30px 10px 10px;
+  border-color: brown;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.box{
+  width: 200px;
+  height: auto;
+  background-color: yellow;
+
+}
+
+p{
+  height: 130px;
+  overflow: auto;
+  border-style: dashed;
+  border-width: 5px;
+  border-color: orange;
+}
+
+img{
+  width: 200px;
+  height: 100px;
+  border-color: brown;
+  border-style:ridge;
+  border-width: 5px;
+}
