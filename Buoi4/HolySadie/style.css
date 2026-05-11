@@ -1,0 +1,89 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: darkslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cl-container{
+  top: 20px;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cl-sadie-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 57, 47);
+  font-size: 40px;
+  letter-spacing: 3px;
+  z-index: 2;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+img{
+  width: 500px;
+  height: 500px;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.cl-text{
+  position: absolute;
+  bottom: 34px;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.cl-layout{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(122, 122, 249);
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* .cl-container:hover img{
+  transform: scale(1.08);
+} */
+
+.cl-container:hover .cl-layout{
+  opacity: 0.55;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.cl-container:hover .cl-sadie-text{
+  transform: translate(-50%, -100%);
+  color: aqua;
+}
+
+span{
+  color: brown; font-weight: 700;
+}
+
+.cl-container:hover span{
+  transform: translate(-50%, -100%);
+  color: rgb(0, 119, 255);
+}
+
+.cl-container:hover .cl-text{
+  opacity: 1;
+  transform: translate(-50%, -65%);
+}
