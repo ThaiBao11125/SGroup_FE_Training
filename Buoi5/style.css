@@ -1,0 +1,380 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(221, 121, 224);
+  background-color: rgb(4, 2, 21);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container-1{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  color: white;
+}
+
+.transform-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(253, 122, 142);
+  transition: all 0.3s ease;
+}
+
+.transform-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  width: 100px;
+  height: 100px;  
+  background-color: rgb(253, 122, 142);
+  transition: all 0.3s ease;
+}
+
+.transform-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;  
+  width: 100px;
+  height: 100px;
+  background-color: rgb(253, 122, 142);
+  transition: all 0.3s ease;
+}
+
+.transform-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(253, 122, 142);
+  transition: all 0.3s ease;
+}
+
+.transform-1:hover{
+  transform: translate(10px, 0);
+  transition: all 0.3s ease;
+}
+
+.transform-2:hover{
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.transform-3:hover{
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+
+.transform-4:hover{
+  transform: translateX(50px) scale(1.5) rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.container-2{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  color: white;
+}
+
+.overlay-1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  width: 200px;
+  height: 200px;
+  transition: all 0.3s ease;
+}
+
+.overlay-1::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  inset: 0;               
+  background: rgba(0, 217, 255, 0.487);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-1:hover::after {
+  opacity: 1;
+}
+
+.overlay-2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  width: 200px;
+  height: 200px;
+  transition: all 0.3s ease;
+}
+
+.overlay-2::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  inset: 0;               
+  background: rgba(128, 230, 152, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-2:hover::after {
+  opacity: 1;
+}
+
+.overlay-3{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  width: 200px;
+  height: 200px;
+  transition: all 0.3s ease;
+}
+
+.overlay-3::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  inset: 0;               
+  background: rgba(230, 128, 128, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-3:hover::after {
+  opacity: 1;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+}
+
+.container-3{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  color: white;
+}
+
+.keyframes-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(158, 168, 21);
+  transition: all 0.3s ease;
+  animation: bounce 0.7s linear infinite;
+}
+
+.keyframes-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  width: 100px;
+  height: 100px;  
+  background-color: rgb(253, 122, 244);
+  transition: all 0.3s ease;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: spin 2s linear infinite;
+}
+
+.keyframes-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;  
+  width: 100px;
+  height: 100px;
+  background-color: rgb(122, 192, 253);
+  transition: all 0.3s ease;
+  animation: pulse 1s linear infinite;
+}
+
+.keyframes-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(55, 155, 33);
+  transition: all 0.3s ease;
+}
+
+@keyframes bounce{
+  0% {
+    transform: translate(0,0);
+  }
+  50% {
+    transform: translate(0,-20px);
+  }
+  100%{
+    transform: translate(0,0);
+  }
+}
+
+@keyframes spin{
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg)
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes pulse{
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.container-4{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  color: white;
+}
+
+.loader-1 {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255,255,255,0.1);
+  border-top-color: #a78bfa;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.loader-2{
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.dot-1{
+  width: 12px;
+  height: 12px;
+  background: #a78bfa;
+  border-radius: 50%;
+  animation: bounce 0.8s ease infinite;
+}
+
+.dot-2{
+  width: 12px;
+  height: 12px;
+  background: #a78bfa;
+  border-radius: 50%;
+  animation: bounce 0.8s ease infinite 0.2s;
+}
+
+.dot-3{
+  width: 12px;
+  height: 12px;
+  background: #a78bfa;
+  border-radius: 50%;
+  animation: bounce 0.8s ease infinite 0.4s;
+}
+
+.loader-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease;
+  gap: 3px;
+}
+
+.bar-1{
+  width: 10px;
+  height: 40px;
+  background: #a78bfa;
+  border-radius: 20%;
+  animation: bar 0.8s ease infinite;
+}
+
+.bar-2{
+  width: 10px;
+  height: 40px;
+  background: #d3c6fa;
+  border-radius: 20%;
+  animation: bar 0.8s ease infinite 0.1s;
+}
+
+.bar-3{
+  width: 10px;
+  height: 40px;
+  background: #a78bfa;
+  border-radius: 20%;
+  animation: bar 0.8s ease infinite 0.2s;
+}
+
+.bar-4{
+  width: 10px;
+  height: 40px;
+  background: #d3c6fa;
+  border-radius: 20%;
+  animation: bar 0.8s ease infinite 0.3s;
+}
+
+.bar-5{
+  width: 10px;
+  height: 40px;
+  background: #a78bfa;
+  border-radius: 20%;
+  animation: bar 0.8s ease infinite 0.4s;
+}
+
+@keyframes bar{
+  0%{
+    height: 100%;
+  }
+  50%{
+    height: 40%;
+  }
+  100%{
+    height: 100%;
+  }
+}
